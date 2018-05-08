@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<prefwindow id="email-this-anywhere-prefs" title="Email This Anywhere! Preferences"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<prefpane id="email-this-anywhere-options">
+  <preferences>
+    <preference id="yahoo_options" name="extensions.email-this-anywhere.yahoo_options" type="string"/>
+    <preference id="google_apps" name="extensions.email-this-anywhere.google_apps" type="string"/>
+  </preferences>
+  <tabbox id="tabbox" flex="1">
+    <tabs>
+      <tab id="yahooTab" label="Yahoo Options"/>
+      <tab id="googleTab" label="Google Apps Options"/>
+    </tabs>
+    <tabpanels flex="1">
+      <tabpanel id="yahooTabpanel">
+        <vbox>
+          <text value="Customize Email This! for Yahoo" style="font-weight: bold;"/>
+          <separator class="thin"/>
+          <label control="normal" value="Enter your Yahoo Country and Server Info. "/>
+          <text value="1) Login to Yahoo Mail Classic and look at the Url/Addres Bar" style="font-size: 11px;"/>
+          <text value="2) You should see something similar to: http://us.mc590.mail.yahoo.com/mc/ or http://us.mc590.mail.yahoo.com/ym/" style="font-size: 11px;"/>
+          <text value="3) Not everyone will have us.mc590 before mail.yahoo.com" style="font-size: 11px;"/>
+          <text value="4) Not everyone will have /mc/ or /ym/ after mail.yahoo.com" style="font-size: 11px;"/>
+          <text value="5) Write in everything you see in the address bar through the mc/ or ym/ (without http://)" style="font-size: 11px;"/>
+          <text value="6) For instance, I would write in us.mc590.mail.yahoo.com/mc/ (and nothing else following it)" style="font-size: 11px;"/>
+          <text value="7) Make sure there is an / at the end your input in the text box." style="font-size: 11px;"/>
+          <textbox preference="yahoo_options"/>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="googleTabpanel">
+        <vbox>
+          <text value="Customize Email This! for Google Apps" style="font-weight: bold;"/>
+          <separator class="thin"/>
+          <label control="normal" value="Enter your GoogleApps Domain URL/Address (without the http://www.): "/>
+          <textbox preference="google_apps"/>
+        </vbox>
+      </tabpanel>
+    </tabpanels>
+  </tabbox>
+</prefpane>
+
+</prefwindow>

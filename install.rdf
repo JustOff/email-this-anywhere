@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>email-this-anywhere@Off.JustOff</em:id>
+    <em:version>1.0.1</em:version>
+    <em:type>2</em:type>
+    <em:name>Email This Anywhere!</em:name>
+    <em:description>Send your recipient the link, title, and a selected summary of the web page you are viewing</em:description>
+    <em:creator>Off JustOff &lt;Off.Just.Off@gmail.com&gt;</em:creator>
+    <em:contributor>Arthur Sabintsev &lt;arthur@sabintsev.com&gt;</em:contributor>
+    <em:contributor>Shawn Branch</em:contributor>
+    <em:contributor>Philip Chee</em:contributor>
+    <em:homepageURL>https://github.com/JustOff/email-this-anywhere/</em:homepageURL>
+    <em:optionsURL>chrome://email-this-anywhere/content/preferences.xul</em:optionsURL>
+
+    <em:targetApplication>
+      <Description>
+        <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
+        <em:minVersion>24.0</em:minVersion>
+        <em:maxVersion>28.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <em:targetApplication>
+      <Description>
+        <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+        <em:minVersion>2.24</em:minVersion>
+        <em:maxVersion>*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

@@ -1,0 +1,15 @@
+#gmail-this-button-1 {
+list-style-image: url("chrome://email-this-anywhere/skin/gmail.png");
+}
+
+#yahoo-this-button-1 {
+list-style-image: url("chrome://email-this-anywhere/skin/yahoo.png");
+}
+
+#mailto-this-button-1 {
+list-style-image: url("chrome://email-this-anywhere/skin/mailto.png");
+}
+
+#googleapps-this-button-1 {
+list-style-image: url("chrome://email-this-anywhere/skin/gapps.png");
+}

@@ -1,0 +1,7 @@
+content email-this-anywhere content/
+skin email-this-anywhere classic/1.0 skin/
+
+overlay chrome://browser/content/browser.xul chrome://email-this-anywhere/content/overlay.xul
+overlay chrome://navigator/content/navigator.xul chrome://email-this-anywhere/content/overlay.xul
+
+style chrome://global/content/customizeToolbar.xul chrome://email-this-anywhere/skin/style.css

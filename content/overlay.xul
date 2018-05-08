@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://email-this-anywhere/skin/style.css" type="text/css"?>
+<!DOCTYPE overlay>
+
+<overlay id="email-this-anywhere-Overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript" src="chrome://email-this-anywhere/content/script.js"/>
+
+  <window id="main-window">
+    <commandset id="commandset">
+      <command id="cmd_email-this-Gmail" oncommand="emailthisanywhere.GmailFunc()"/>
+      <command id="cmd_email-this-Yahoo" oncommand="emailthisanywhere.YahooFunc()"/>
+      <command id="cmd_email-this-GoogleApps" oncommand="emailthisanywhere.GoogleAppsFunc()"/>
+      <command id="cmd_email-this-MailTo" oncommand="emailthisanywhere.MailToFunc()"/>
+    </commandset> 
+
+    <keyset id="mainKeyset">
+      <key id="key_email-this-Gmail" command="cmd_email-this-Gmail" modifiers="alt,accel" key="g"/>
+      <key id="key_email-this-Yahoo" command="cmd_email-this-Yahoo" modifiers="alt,accel" key="y"/>
+      <key id="key_email-this-GoogleApps" command="cmd_email-this-GoogleApps" modifiers="alt,accel" key="a"/>
+      <key id="key_email-this-MailTo" command="cmd_email-this-MailTo" modifiers="alt,accel" key="k"/>
+    </keyset>
+
+    <keyset id="navKeys">
+      <key id="key_email-this-Gmail" command="cmd_email-this-Gmail" modifiers="alt,accel" key="g"/>
+      <key id="key_email-this-Yahoo" command="cmd_email-this-Yahoo" modifiers="alt,accel" key="y"/>
+      <key id="key_email-this-GoogleApps" command="cmd_email-this-GoogleApps" modifiers="alt,accel" key="a"/>
+      <key id="key_email-this-MailTo" command="cmd_email-this-MailTo" modifiers="alt,accel" key="k"/>
+    </keyset>
+  </window>
+
+<toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="gmail-this-button-1"
+         label="Gmail This!"
+         tooltiptext="GMail This!"
+         command="cmd_email-this-Gmail"
+         class="toolbarbutton-1 chromeclass-toolbar-additional"
+         key="key_email-this-Gmail"
+         />
+  
+    <toolbarbutton id="yahoo-this-button-1"
+         label="Yahoo This!"
+         tooltiptext="Yahoo This!"
+         command="cmd_email-this-Yahoo"
+         class="toolbarbutton-1 chromeclass-toolbar-additional"
+         key="key_email-this-Yahoo"
+         />
+  
+    <toolbarbutton id="googleapps-this-button-1"
+         label="Google-Apps This!"
+         tooltiptext="GoogleApps This!"
+         command="cmd_email-this-GoogleApps"
+         class="toolbarbutton-1 chromeclass-toolbar-additional"
+         key="key_email-this-GooglApps"
+         />
+
+    <toolbarbutton id="mailto-this-button-1"
+         label="Mail-To This!"
+         tooltiptext="Mail-To This!"
+         command="cmd_email-this-MailTo"
+         class="toolbarbutton-1 chromeclass-toolbar-additional"
+         key="key_email-this-MailTo"
+         />
+  </toolbarpalette>
+
+  <popup id="email-this-anywhere-menu">
+  </popup>
+
+  <popup id="contentAreaContextMenu">
+    <menuseparator/>
+    <menu id="email-this-anywhere-menu" label="Email This Anywhere!">
+      <menupopup id="email-this-anywhere-menu" label="Email This Anywhere!">
+        <menuitem insertafter="Properties" label="Gmail This!" command="cmd_email-this-Gmail" accesskey="g" key="key_email-this-Gmail" />
+        <menuitem insertafter="Properties" label="Yahoo This!" command="cmd_email-this-Yahoo" accesskey="y" key="key_email-this-Yahoo" />
+        <menuitem insertafter="Properties" label="Google-Apps This!" command="cmd_email-this-GoogleApps" accesskey="a" key="key_email-this-GoogleApps" />
+        <menuitem insertafter="Properties" label="Mail-To This!" command="cmd_email-this-MailTo" accesskey="m" key="key_email-this-MailTo" />
+      </menupopup>
+    </menu>
+  </popup>
+
+</overlay>
