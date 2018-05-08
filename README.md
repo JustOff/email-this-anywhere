@@ -1,0 +1,1 @@
+**Email This Anywhere!** is the fork of [Email This!](https://addons.mozilla.org/addon/email-this/) from [Arthur Sabintsev](https://github.com/ArtSabintsev), created by the author's kind [permission](https://forum.palemoon.org/viewtopic.php?p=140548#p140548) by request from [Thehandyman1957](https://forum.palemoon.org/memberlist.php?mode=viewprofile&u=9194).
